@@ -1,0 +1,28 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: yellow;
+
+	.logo {
+		background: aqua;
+
+		h1 {
+			font-size: 64px;
+		}
+	}
+
+	.navigation {
+		background: pink;
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			background: purple;
+
+			li {
+				background: aqua;
+			}
+		}
+	}
+}
