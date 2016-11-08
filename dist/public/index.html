@@ -3,19 +3,25 @@
 <head>
     <meta charset="utf-8" />
 
+    <!--for the responsive queries in phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <!--title-->
-    <title>Christian Cleaning</title>
+    <title>Kingdom Cleaning</title>
 
     <!--SEO-->
-    <meta name="description" content="Summerland Builders is a state licensed GC, located in the beautiful Florida keys, serving all of south Florida (Miami and Florida Keys area). At Summerland Builders, we provide design and construction services for upcoming residential and commercial projects. Our services include, but are not limited to: New Construction, Home Renovation Projects, Commercial Property Renovation Services" />
+    <!-- <meta name="description" content="Summerland Builders is a state licensed GC, located in the beautiful Florida keys, serving all of south Florida (Miami and Florida Keys area). At Summerland Builders, we provide design and construction services for upcoming residential and commercial projects. Our services include, but are not limited to: New Construction, Home Renovation Projects, Commercial Property Renovation Services" />
     <meta name="keywords" content="new construction, home renovation projects, rooms, kitchens, bathrooms, masonry, roofs, landscape, commercial, property, renovation cervices, rental properties, office, warehouses, responsive, portfolio, fun, multimedia, front, end, developer, web, design, rwd, key largo, miami, orlando, fl, marathon, tavernier, islamorada, key west, homestead, florida, mobile, site, downtown, menu, navigation, effect, inspiration," />
-    <meta name="author" content="Andres Munoz" />
+    <meta name="author" content="Andres Munoz" /> -->
 
     <!--reset sheet-->
     <link href='css/reset.min.css' rel='stylesheet'>
 
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!--googlefont-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
     <!--css-->
     <link href='css/main.min.css' rel='stylesheet'>
@@ -46,35 +52,207 @@
 <body>
 
     <div class="header">
-        <div class="logo">
-            <h1>Logo \m/</h1>
+        <div class="header-top">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Kingdom Cleaning!">
+                </div>
+                <div class="phrase">
+                    <h2>"Trust is priceless!"</h2>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <h2 class="nav-services">services</h2>
+                        </li>
+                        <li>
+                            <h2 class="nav-about">about</h2>
+                        </li>
+                        <li>
+                            <h2 class="nav-contact">contact</h2>
+                        </li>
+                        <li>
+                            <h2 class="nav-reviews">reviews</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="navigation">
-            <ul>
-                <li>
-                    <h2>services</h2>
-                </li>
-                <li>
-                    <h2>about</h2>
-                </li>
-                <li>
-                    <h2>reviews</h2>
-                </li>
-            </ul>
+        <div class="header-bottom">
+            <div class="wrapper">
+                <h3>Contact us for a free quote!</h3>
+                <a href="mailto:laura@christiancleaning.org?subject=Please send me a free quote!"><h3>Laura@christiancleaning.org</h3></a>
+                <a href="tel:18008092253"><h3>1-800-809-2253</h3></a>
+            </div>
         </div>
     </div>
 
-    <h2>Wiii Christian Cleaning!!!</h2>
+    <div class="background-video">
+        <video autoplay="true" loop="true" poster="" id="bgvideo" preload="true">
+            <source src="assets/bgvideo.webm" type="video/webm">
+            <source src="assets/bgvideo.ogv" type="video/ogg">
+        </video><!--end #bgvideo-->
+    </div><!--end .background- video-->
 
+    <div class="welcome-statement">
+        <h2>Kingdom cleaning was inspired by the trust and friendship that developed between a client and her loyal and sweet cleaning lady.</h2>
+    </div>
+    <div class="services">
+        <div class="wrapper">
+            <div class="residential">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                    <path d="M16 1l-16 16 3 3 3-3v13h8v-6h4v6h8v-13l3 3 3-3-16-16zM16 14c-1.105 0-2-0.895-2-2s0.895-2 2-2c1.105 0 2 0.895 2 2s-0.895 2-2 2z"></path>
+                </svg>
+                <h3>RESIDENTIAL</h3>
+            </div>
+            <div class="movein">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                    <path d="M32 18l-4-8h-6v-4c0-1.1-0.9-2-2-2h-18c-1.1 0-2 0.9-2 2v16l2 2h2.536c-0.341 0.588-0.536 1.271-0.536 2 0 2.209 1.791 4 4 4s4-1.791 4-4c0-0.729-0.196-1.412-0.536-2h11.073c-0.341 0.588-0.537 1.271-0.537 2 0 2.209 1.791 4 4 4s4-1.791 4-4c0-0.729-0.196-1.412-0.537-2h2.537v-6zM22 18v-6h4.146l3 6h-7.146z"></path>
+                </svg>
+                <h3>MOVE IN/OUT</h3>
+            </div>
+            <div class="postconstruction">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                    <path d="M32 18v-12h-6v-2c0-1.1-0.9-2-2-2h-22c-1.1 0-2 0.9-2 2v6c0 1.1 0.9 2 2 2h22c1.1 0 2-0.9 2-2v-2h4v8h-18v4h-1c-0.552 0-1 0.448-1 1v10c0 0.552 0.448 1 1 1h4c0.552 0 1-0.448 1-1v-10c0-0.552-0.448-1-1-1h-1v-2h18zM24 6h-22v-2h22v2z"></path>
+                </svg>
+                <h3>POST CONSTRUCTION</h3>
+            </div>
+        </div>
+    </div>
+    <div class="costumer-feedback">
+        <div class="wrapper">
+            <h2>We asked our costumers for the most important features they look for in a cleaning company and <span class="bold">this</span> is what they want:</h2>
+            <div class="numbers">
+                <div class="confidence">
+                    <div class="number">
+                        <h4>1</h4>
+                    </div>
+                    <h3>CONFIDENCE</h3>
+                    <p>Our employees are trained, experienced and trust worthy.</p>
+                </div>
+                <div class="dependability">
+                    <div class="number">
+                        <h4>2</h4>
+                    </div>
+                    <h3>DEPENDABILITY</h3>
+                    <p>Our staff is committed to be there when you need us.</p>
+                </div>
+                <div class="accountability">
+                    <div class="number">
+                        <h4>3</h4>
+                    </div>
+                    <h3>ACCOUNTABILITY</h3>
+                    <p>Our main focus is making sure you are 100% satisfied.</p>
+                </div>
+                <div class="supervision">
+                    <div class="number">
+                        <h4>4</h4>
+                    </div>
+                    <h3>SUPERVISION</h3>
+                    <p>Our employees are closely monitored until task is finished.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="goal">
+        <h2>The company's # 1 goal is to provide our clients with the same level of assurance and quality service we experienced ourselves and believe everybody should also have.</h2>
+    </div>
+    <div class="trust-band">
+        <h2>Trust is priceless!</h2>
+    </div>
+    <div class="contact">
+        <div class="wrapper">
+            <h2>EMAIL US, CALL US, OR CONTACT US THROUGH THIS FORM</h2>
+            <div class="form">
+                <div class="side-a">
+                    <div class="input">
+                        <label>Name:</label><br>
+                        <input type="text" name="name" value="" size="40" placeholder="John Doe">
+                    </div>
+                    <div class="input">
+                        <label>Email:</label><br>
+                        <input type="text" name="name" value="" size="40" placeholder="John Doe">
+                    </div>
+                    <div class="input">
+                        <label>Phone:</label><br>
+                        <input type="text" name="name" value="" size="40" placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="side-b">
+                    <div class="text-area"> 
+                        <label>Tell us about your house:</label><br>
+                        <textarea name="symptoms" rows="6" placeholder="square footage, number of floors, number of bathrooms, etc..."></textarea>
+                    </div>
+                    <div class="button">
+                        <h3>Submit</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="costumer-reviews">
+        <div class="wrapper">
+            <h2>SEE WHAT OUR COSTUMERS ARE SAYING:</h2>
+            <div class="statement">
+                <p>​"Kingdom Cleaning has been taking care of my estate for 5 years, to me, having people in my home that I can trust is very important, that is why I love them, they take care of all my needs even when I travel"</p>
+            </div>
+            <div class="signature">
+                <h4>J.S. Richmond, Texas</h4>
+            </div>
+            <div class="statement">
+                <p>​"I just love Kindgdom Cleaning, they have been taking care of my home for about 3 years now, I recently needed my boses office building cleaned last minute for a coorporate visit and couldnt find anyone able to come the next day, called Kingdom Cleaning to see if they could help and they saved the day doing the same great job they always do, thanks guys!"</p>
+            </div>
+            <div class="signature">
+                <h4>​S.B. Sugarland, Texas</h4>
+            </div>
+        </div>
+    </div>
 
-
-
-
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="assets/logo.png" alt="Kingdom Cleaning! Footer">
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2016 Kingdom Cleaning</p>
+        </div>
+    </div>
 
 
 
 
 
     <script src='js/main.min.js'></script>
+
+    <!--On Click Scroll plus responsiveness-->
+
+    <script type="text/javascript">
+
+    $('.nav-services').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $('.services').offset().top-149}, 2500);
+    });
+
+    $('.nav-about').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $('.goal').offset().top-149}, 2500);
+    });
+
+    $('.nav-contact').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $('.contact').offset().top-214}, 2500);
+    });
+
+    $('.nav-reviews').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $('.costumer-reviews').offset().top-149}, 2500);
+    });
+
+    </script>
+
+    <!-- $('.nav-services').click(function(e)
+        {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: $('.services').offset().top-56}, 2500);
+        }); -->
 
 </body>

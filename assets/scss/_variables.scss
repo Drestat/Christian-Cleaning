@@ -1,17 +1,37 @@
 
+
+
 // Colors
 
 $background:		#f2f2f2;
-$light-gray:		#f2f2f2;
-$medium-gray:		#f2f2f2;
-$dark-gray:			#f2f2f2;
-$light-blue: 		#333;
-$dark-blue: 		#444;
-$magenta: 			#f2f2f2;
+$black:				#202020;
+$gray:				#b5b9bd;
+$dark-gray:			#5c5c5c;
+$blue:		 		#00c4cc;
+$salmon:			#E88064;
 
 
 // Fonts
 
-// $heading-font: 		Times;
+// $heading-font: 		Open;
 // $body-font:			Helvetica;
 
+// Media query breakpoints
+// Combination example @media #{$only-screen} and #{$breakpoint-xs} and #{$portrait}
+//////////////////////////////////////
+$only-screen:    'only screen';
+$landscape:      '(orientation: landscape)';
+$iphone5-screen: '320px';
+
+// Device Breakpoints
+// Combination example @media #{$iphone6} and #{$portrait}
+//////////////////////////////////////
+
+$iphone5:     			'#{$only-screen} and (max-width : #{$iphone5-screen})' !default;
+// $iphone6:     		'#{$only-screen} and ';
+// $iphone6plus: 		'#{$only-screen} and ';
+// $ipad-early:  		'#{$only-screen} and ';
+// $ipad-newer:  		'#{$only-screen} and ';
+$desktop-small:     	'#{$only-screen} and (min-width: 800px)' !default;
+$desktop-medium:    	'#{$only-screen} and (min-width: 1000px)' !default;
+$desktop-large:     	'#{$only-screen} and (min-width: 1240px)' !default;

@@ -1,5 +1,23 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+
+	@media #{$desktop-medium} {
+      width: 1000px;
+
+      @media #{$desktop-large} {
+	      width: 1200px;
+	    }
+    }
+}
+
+a {
+	text-decoration: none;
 }
 
 h1 {
@@ -7,7 +25,7 @@ h1 {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 32px; 
 }
 
 h3 {
@@ -23,8 +41,18 @@ p {
 }
 
 .button {
+	background: $salmon;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 22px;
+    padding: 15px 0;
 
 	h2, h3, p {
 		font-size: 20px;
 	}
 }
+
+.bold {
+	font-weight: 700;
+}
+
